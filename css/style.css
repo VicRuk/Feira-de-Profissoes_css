@@ -15,12 +15,21 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     color: #fff;
     background: #202124;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+p{
+    font-size: 17px;
 }
 
 header{
     position: relative;
     width: 100%;
-    height: 92vh;
+    height: 90vh;
     padding: 0;
     overflow: hidden;
     display: flex;
@@ -54,7 +63,7 @@ header{
 
 nav{
     width: 100%;
-    height: 8vh;
+    height: 62px;
     background: rgba(19, 18, 18, 0.8);
     position: sticky;
     top: 0;
@@ -62,7 +71,7 @@ nav{
 nav ul{
     display: flex;
     justify-content: space-between;
-    padding: 0 150px;
+    padding: 0 100px;
 }
 nav li{
     list-style: none;
@@ -74,8 +83,8 @@ nav a{
     color:#fff;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 17px;
-    line-height: 50px;
+    font-size: 18px;
+    line-height: 62px;
     letter-spacing: 0.5px;
     transition: 0.5s;
 }
@@ -90,10 +99,87 @@ nav a::after{
 nav a:hover::after{
     width: 100%;
     transition: width 0.5s ease;
-    margin-top: -3px;
+    margin-top: -5px;
 }
 nav a:hover{
-    font-size: 18px;
+    font-size: 20px;
+}
+
+/* BARRA DE PROGRESSO ATIVA CASO HABILITADO 'chrome://flags/#enable-experimental-web-platform-features'
+.progresso{
+    height: 2px;
+    background: limegreen;
+    position: sticky;
+    top: 0;
+    transform: translateX(-100%);
+    animation: scrollprogress 1s linear both;
+    animation-timeline: scrollprogress;
+    z-index: 1;
+}
+
+@scroll-timeline scrollprogress{
+    time-range: 1s;
+}
+@keyframes scrollprogress{
+    to{transform: translateX(0);}
+}
+*/
+
+section{
+    position: relative;
+    z-index: -1;
+}
+
+
+.sobre{
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    padding: 70px 130px;
+    margin: 0;
+    background: #202124;
+    align-items: center;
+    justify-content: center;
+}
+.secao1{
+    position: relative;
+    display: flex;
+    margin: 0;
+    bottom: 15px;
+}
+.layer{
+    position: relative;
+    width: 370px;
+    padding: 0px 50px 0px 0px;
+    left: -50px;
+}
+.texto1{
+    align-self: center;
+    text-align: left;
+}
+
+.secao2{
+    position: relative;
+    display: flex;
+    margin: 0;
+    bottom: 110px;
+}
+.layer2{
+    position: relative;
+    width: 370px;
+    padding: 0px 0px 0px 50px;
+    right: -50px;
+    bottom: 30px;
+}
+.texto2{
+    align-self: center;
+    text-align: right;
+}
+
+
+.exigencias{
+    height: 100vh;
+    width: 100%;
 }
 
 @media (max-width: 1040px) {
@@ -105,16 +191,68 @@ nav a:hover{
         font-size: 1.1rem;
         padding: 0px 100px 0px 100px;
     }
+    nav a{
+        font-size: 14px;
+    }
+    nav a:hover{
+        font-size: 16px;
+    }
+    .layer{
+        width: 360px;
+    }
+    .texto1 p{
+        font-size: 15px;
+    }
+    .secao2{
+        bottom: 0px;
+    }
+    
+
 }
 @media (max-width: 856px) {
     nav ul{
         padding: 0px 15px 0 15px;
     }
     nav a{
-        font-size: 12px;
+        font-size: 10px;
     }
     nav a:hover{
-        font-size: 15px;
+        font-size: 11px;
+    }
+    .layer{
+        width: 200px;
+        height: 150px;
+        left: -30px;
+        top: 10px;
+        padding: 0px 20px 0px 0px;
+    }
+    .sobre{
+        padding: 70px 50px;
+        height: 85vh;
+        text-align: center;
+    }
+    .secao1{
+        top: 10px
+    }
+    .sobre h1{
+        font-size: 35px;
+    }
+    .texto1 p{
+        font-size: 12px;
+    }
+
+    .layer2{
+        width: 200px;
+        height: 150px;
+        left: -30px;
+        top: 10px;
+        padding: 0px 0px 0px 50px;
+    }
+    .texto2 p{
+        font-size: 12px;
+    }
+    .secao2{
+        top: 10px
     }
 }
 @media (max-width: 444px) {
@@ -130,23 +268,43 @@ nav a:hover{
         font-size: 3rem;
     }
     nav ul{
-        padding: 0 5px 0 5px;
+        padding: 0;
     }
     nav a{
-        font-size: 8px;
+        font-size: 6px;
         margin: 1px;
     }
     nav a:hover{
-        font-size: 8px;
+        font-size: 7px;
     }
-}
 
-.sobre{
-    height: 100vh;
-    width: 100%;
-}
-
-.exigencias{
-    height: 100vh;
-    width: 100%;
+    .layer{
+        display: none;
+    }
+    .sobre{
+        padding: 90px 50px;
+    }
+    .sobre h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .secao1{
+        top: 10px;
+    }
+    .texto1 p{
+        text-align: center;
+        font-size: 12px;
+        top: 20px
+    }
+    .layer2{
+        display: none;
+    }
+    .secao2{
+        top: 20px;
+    }
+    .texto2 p{
+        text-align: center;
+        font-size: 12px;
+        top: 20px
+    }
 }
