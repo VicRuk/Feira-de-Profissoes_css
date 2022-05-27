@@ -79,6 +79,7 @@ nav{
     background: rgba(19, 18, 18, 0.8);
     position: sticky;
     top: 0;
+    overflow: hidden;
 }
 nav ul{
     display: flex;
@@ -200,7 +201,7 @@ section{
     position: relative;
     height: 40em;
     width: 100%;
-    padding: 120px 100px;
+    padding: 105px 100px;
     margin: 0;
     background: #2E3035;
     align-items: center;
@@ -229,8 +230,6 @@ section{
     width: 50px;
     height: 50px;
     left: 0;
-    transition: 1s linear;
-    cursor: pointer;
 }
 .exigencias-eixo1 .exigencias-quadrado{
     left: -40px;
@@ -244,22 +243,111 @@ section{
     left: 40px;
 }
 
-.exigencias-quadrado:hover{
-    background: red;
-}
-
-
 
 .mercado{
     position: relative;
-    height: 43em;
+    height: 100em;
     width: 100%;
-    padding: 70px 100px;
+    padding: 80px 100px;
     margin: 0;
-    background: black;
+    background: #2E3341;
     align-items: center;
     justify-content: center;
 }
+.mercado h1{
+    font-size: 50px;
+}
+.slider1{
+    padding: 20px 0;
+    display: flex;
+    transition: .7s;
+}
+.slider2{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    transition: .7s;
+}
+.card{
+    position: relative;
+    border-radius: 27px;
+    margin: 20px ;
+    width: 330px;
+    height: 380px;
+    border: solid 4px #01F5B7;
+}
+
+
+.card-secao h2{
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.card-secao{
+    position: relative;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.mercado-quadrado{
+    position: absolute;
+    background: #13AACE;
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    left: 50px;
+    bottom: 125px;
+}
+.card-img{
+    position: relative;
+    background: #01F5B7;
+    width: 330px;
+    height: 150px;
+    bottom: 35px;
+    border-radius: 20px 20px 0 0;
+    border: solid 4px #01F5B7;
+    transition: .5s;
+}
+#mercado1{
+    background-image: url('../files/images/operador.png');
+    background-size: cover;
+    background-position-y: -30px;
+    background-position-x: cover;
+}
+#mercado2{
+    background-image: url('../files/images/tv.png');
+    background-size: cover;
+    background-position-y: 0px;
+    background-position-x: cover;
+}
+#mercado3{
+    background-image: url('../files/images/produtor_exe.png');
+    background-size: cover;
+    background-position-y: -30px;
+    background-position-x: cover;
+}
+
+#mercado4{
+    background-image: url('../files/images/editor.png');
+    background-size: cover;
+    background-position-y: -30px;
+    background-position-x: cover;
+}
+#mercado5{
+    background-image: url('../files/images/auxiliar_operacaosonora.jpg');
+    background-size: cover;
+    background-position-y: -30px;
+    background-position-x: cover;
+}
+#mercado6{
+    background-image: url('../files/images/copywriting.jpeg');
+    background-size: cover;
+    background-position-y: -30px;
+    background-position-x: cover;
+}
+
 
 
 @media (max-width: 1070px) {
@@ -410,11 +498,5 @@ section{
         text-align: center;
         font-size: 12px;
         top: 20px
-    }
-}
-
-@media (max-width: 250px) {
-    nav p{
-        display: none;
     }
 }
