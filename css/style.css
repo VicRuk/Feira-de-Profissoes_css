@@ -72,6 +72,7 @@ header{
     padding: 0px 300px 0px 300px;
 }
 
+/* NAVEGAÇÃO */
 
 nav{
     width: 100%;
@@ -80,6 +81,7 @@ nav{
     position: sticky;
     top: 0;
     overflow: hidden;
+    z-index: 1;
 }
 nav ul{
     display: flex;
@@ -147,8 +149,10 @@ nav p:hover{
 
 section{
     position: relative;
-    z-index: -1;
 }
+
+
+/* SOBRE */
 
 
 .sobre{
@@ -197,6 +201,9 @@ section{
 }
 
 
+/* EXIGÊNCIAS */
+
+
 .exigencias{
     position: relative;
     height: 40em;
@@ -230,6 +237,7 @@ section{
     width: 50px;
     height: 50px;
     left: 0;
+    transition: 1s ease;
 }
 .exigencias-eixo1 .exigencias-quadrado{
     left: -40px;
@@ -243,12 +251,19 @@ section{
     left: 40px;
 }
 
+.exigencias-quadrado:hover{
+    background: #38ce13;
+}
+
+
+/*MERCADO*/
+
 
 .mercado{
     position: relative;
-    height: 100em;
+    height: 43em;
     width: 100%;
-    padding: 80px 100px;
+    padding: 70px 100px;
     margin: 0;
     background: #2E3341;
     align-items: center;
@@ -257,13 +272,16 @@ section{
 .mercado h1{
     font-size: 50px;
 }
-.slider1{
-    padding: 20px 0;
+
+.main-card{
+    overflow: hidden;
+    width: 500%;
+    height: 100%;
+    padding: 15px 0px;
     display: flex;
-    transition: .7s;
 }
-.slider2{
-    width: 100%;
+.slide{
+    width: 20%;
     padding: 20px 0;
     display: flex;
     transition: .7s;
@@ -271,18 +289,10 @@ section{
 .card{
     position: relative;
     border-radius: 27px;
-    margin: 20px ;
+    margin: 20px;
     width: 330px;
-    height: 380px;
+    height: 425px;
     border: solid 4px #01F5B7;
-}
-
-
-.card-secao h2{
-    position: relative;
-    bottom: 15px;
-    text-align: center;
-    font-size: 30px;
 }
 .card-secao{
     position: relative;
@@ -291,15 +301,39 @@ section{
     flex-direction: column;
     align-items: center; 
 }
+.mercado-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    top: -20px;
+}
+.profissao p{
+    font-size: 16px;
+}
+.profissao .p1{
+    font-size: 14px;
+}
+.mercado-title h2{
+    position: relative;
+    text-align: left;
+    font-size: 30px;
+}
+.mercado-title h3{
+    position: relative;
+    text-align: left;
+    font-size: 25px;
+}
 .mercado-quadrado{
-    position: absolute;
+    position: relative;
     background: #13AACE;
     border-radius: 10px;
-    width: 35px;
-    height: 35px;
-    left: 50px;
-    bottom: 125px;
+    min-width: 35px;
+    min-height: 35px;
+    margin-right: 15px;
 }
+
 .card-img{
     position: relative;
     background: #01F5B7;
@@ -332,23 +366,81 @@ section{
 #mercado4{
     background-image: url('../files/images/editor.png');
     background-size: cover;
-    background-position-y: -30px;
+    background-position-y: 0px;
     background-position-x: cover;
 }
 #mercado5{
     background-image: url('../files/images/auxiliar_operacaosonora.jpg');
     background-size: cover;
-    background-position-y: -30px;
+    background-position-y: 0px;
     background-position-x: cover;
 }
 #mercado6{
     background-image: url('../files/images/copywriting.jpeg');
     background-size: cover;
-    background-position-y: -30px;
+    background-position-y: 0px;
+    background-position-x: cover;
+}
+#mercado7{
+    background-image: url('../files/images/script.png');
+    background-size: cover;
+    background-position-y: 0px;
+    background-position-x: cover;
+}
+#mercado8{
+    background-image: url('../files/images/roteirista.jpg');
+    background-size: cover;
+    background-position-y: 0px;
     background-position-x: cover;
 }
 
+.mercado-salario{
+    position: relative;
+    padding: 10px 0px;
+    text-align: center;
+    background: #2b7274;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.mercado-salario h3{
+    font-size: 20px;
+}
 
+.main-card .mercado-nav{
+    position: absolute;
+    transform: translate( -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 60px;
+    bottom: 42%;
+}
+
+.bar{
+    width: 17px;
+    height: 17px;
+    border: 2px solid #01F5B7;
+    margin: 6px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .6s;
+}
+.bar:hover{
+    background: #01F5B7;
+}
+input{
+    display: none;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
 
 @media (max-width: 1070px) {
     .video-bg{
