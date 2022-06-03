@@ -261,7 +261,7 @@ section{
 
 .mercado{
     position: relative;
-    height: 43em;
+    height: 47em;
     width: 100%;
     padding: 70px 100px;
     margin: 0;
@@ -277,21 +277,23 @@ section{
     overflow: hidden;
     width: 500%;
     height: 100%;
-    padding: 15px 0px;
+    padding: 5px 0px;
     display: flex;
 }
 .slide{
     width: 20%;
-    padding: 20px 0;
+    overflow: hidden;
+    padding: 0px 0;
     display: flex;
     transition: .7s;
 }
 .card{
+    overflow: hidden;
     position: relative;
     border-radius: 27px;
     margin: 20px;
     width: 330px;
-    height: 425px;
+    height: 455px;
     border: solid 4px #01F5B7;
 }
 .card-secao{
@@ -338,7 +340,7 @@ section{
     position: relative;
     background: #01F5B7;
     width: 330px;
-    height: 150px;
+    height: 160px;
     bottom: 35px;
     border-radius: 20px 20px 0 0;
     border: solid 4px #01F5B7;
@@ -347,7 +349,7 @@ section{
 #mercado1{
     background-image: url('../files/images/operador.png');
     background-size: cover;
-    background-position-y: -30px;
+    background-position-y: 0px;
     background-position-x: cover;
 }
 #mercado2{
@@ -442,10 +444,57 @@ input{
     margin-left: -40%;
 }
 
-@media (max-width: 1070px) {
+
+/* ENTREVISTA */
+
+
+.entrevista{
+    position: relative;
+    height: 43em;
+    width: 100%;
+    padding: 70px 100px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+.curva{
+    top: 0;
+    position: absolute;
+    height: 225px;
+    width: 100%;
+}
+.curva::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 75%;
+    height: 100%;
+    transform: translate(66%, -52%);
+    background-color: #202124;
+    top: 0;
+  }
+
+  .curva::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 20%;
+    width: 75%;
+    height: 100%;
+    background-color: #2E3341;
+    transform: translate(-31%, -32%);
+    top: 0px;
+    z-index: -1;
+
+  }
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1115px) {
     .video-bg{
         width: auto;
-        height: 100%;
+        height: auto;
     }
     .title p{
         font-size: 1.1rem;
@@ -477,7 +526,58 @@ input{
         bottom: -10px;
     }
     
-
+    .card{
+        width: 250px;
+        height: 345px;
+        border: solid 4px #01F5B7;
+    }
+    .card-secao{
+        padding: 0px 10px;
+    }
+    .mercado-desc{
+        position: relative;
+        top: -15px;
+    }
+    .profissao p{
+        font-size: 11px;
+    }
+    .profissao .p1{
+        font-size: 9px;
+    }
+    .mercado-title{
+        top: -25px;
+    }
+    .mercado-title h2{
+        font-size: 19px;
+    }
+    .mercado-title h3{
+        font-size: 14px;
+    }
+    .mercado-quadrado{
+        border-radius: 5px;
+        min-width: 20px;
+        min-height: 20px;
+    }
+    .card-img{
+        width: 250px;
+        height: 115px;
+    }
+    .mercado-salario{
+        top: -15px;
+    }
+    .mercado-salario h3{
+        font-size: 10px;
+    }
+    .main-card .mercado-nav{
+        bottom: 50%;
+    }
+    .bar{
+        width: 10px;
+        height: 10px;
+    }
+    .mercado-salario{
+        margin-top: 5px;
+    }
 }
 @media (max-width: 856px) {
     nav ul{
@@ -529,6 +629,51 @@ input{
     }
     .sobre-secao2{
         top: 10px
+    }
+
+    .mercado{
+        padding: 70px 20px;
+    }
+    .mercado h1{
+        font-size: 40px;
+    }
+    .card{
+        width: 210px;
+        height: 440px;
+        border: solid 4px #01F5B7;
+        margin: 5px;
+    }
+    .card-secao{
+        padding: 0px 5px;
+    }
+    .mercado-desc{
+        position: relative;
+        top: -15px;
+    }
+    .profissao p{
+        font-size: 11px;
+    }
+    .profissao .p1{
+        font-size: 9px;
+    }
+    .mercado-title h2{
+        font-size: 15px;
+    }
+    .mercado-title h3{
+        font-size: 13px;
+    }
+    .card-img{
+        width: 210px;
+        height: 130px;
+    }
+    .mercado-salario h3{
+        font-size: 9px;
+    }
+    .main-card .mercado-nav{
+        transform: translate(-50%, -50%);
+        flex-direction: row;
+        left: 50%;
+        bottom: 8%;
     }
 }
 @media (max-width: 444px) {
