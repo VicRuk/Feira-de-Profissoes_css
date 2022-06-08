@@ -81,7 +81,7 @@ nav{
     position: sticky;
     top: 0;
     overflow: hidden;
-    z-index: 1;
+    z-index: 2;
 }
 nav ul{
     display: flex;
@@ -452,13 +452,12 @@ input{
 .entrevista{
     position: relative;
     width: 100%;
-    height: 45em;
+    height: 40em;
 }
 #entrevista-video{
     position: relative;
     text-align: center;
-    top: 9em;
-
+    top: 8em;
 }
 
 .curva1{
@@ -478,19 +477,6 @@ input{
     transform: translate(-31%, -40%);
     top: 0px;
     z-index: -1;
-}
-
-@keyframes animate {
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-    100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
-    }
 }
 
 .background {
@@ -514,9 +500,6 @@ input{
     background: rgba(255, 255, 255, 0.2);
     animation: animate 15s linear infinite;
 }
-
-
-
 
 .background li:nth-child(0) {
     left: 15%;
@@ -589,18 +572,35 @@ input{
     animation-delay: 11s;
 }
 
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+
 /* CERTIFICAÇÕES */
 .certificacoes{
     position: relative;
-    height: 43em;
+    height: 100em;
     width: 100%;
-    padding: 70px 100px;
     margin: 0;
     align-items: center;
     justify-content: center;
     background: #2E3341;
 }
-
+.certificacoes h1{
+    padding-top: 65px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+}
 .curva2{
     top: 0;
     position: absolute;
@@ -615,12 +615,58 @@ input{
     width: 75%;
     height: 100%;
     background-color: #2E3341;
-    transform: translate(50%, -70%);
+    transform: translate(50%, -40%);
     top: 0px;
     z-index: -1;
 }
 
-@media (max-width: 1366px) {
+
+/* CERTIFICAÇÕES - GRADUAÇÃO */
+.graduacao{
+    position: relative;
+    height: 43em;
+    width: 100%;
+    background: #1B492F;
+}
+.graduacao-header{
+    position: relative;
+    width: 100%;
+    height: 27em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+}
+.graduacao-title{
+    text-align: center;
+    z-index: 2;
+}
+.graduacao-title h3{
+    font-size: 5em;
+    text-shadow: 
+    0em 0em 0.2em black;
+}
+#graduacao-titleimg1{
+    top: 0;
+    position: absolute;
+    background: url("../files/images/graduacao.png");
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    width: 100%;
+    height: 27em;
+    z-index: 1;
+    opacity: 80%;
+}
+.graduacao-secao{
+    width: 100%;
+    height: 30em;
+    background: #1B492F;
+}
+
+
+@media (max-width: 1920px){
 }
 
 @media (max-width: 1115px) {
