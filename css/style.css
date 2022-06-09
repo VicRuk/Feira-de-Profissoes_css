@@ -48,7 +48,6 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: black;
 }
 .video-bg{
     position: absolute;
@@ -589,7 +588,7 @@ input{
 /* CERTIFICAÇÕES */
 .certificacoes{
     position: relative;
-    height: 100em;
+    height: 170em;
     width: 100%;
     margin: 0;
     align-items: center;
@@ -598,7 +597,7 @@ input{
 }
 .certificacoes h1{
     padding-top: 65px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     padding-left: 100px;
 }
 .curva2{
@@ -624,7 +623,7 @@ input{
 /* CERTIFICAÇÕES - GRADUAÇÃO */
 .graduacao{
     position: relative;
-    height: 43em;
+    height: 103em;
     width: 100%;
     background: #1B492F;
 }
@@ -640,7 +639,7 @@ input{
 }
 .graduacao-title{
     text-align: center;
-    z-index: 2;
+    z-index: 1;
 }
 .graduacao-title h3{
     font-size: 5em;
@@ -656,15 +655,134 @@ input{
     background-position-x: center;
     width: 100%;
     height: 27em;
-    z-index: 1;
+    z-index: 0;
     opacity: 80%;
 }
 .graduacao-secao{
     width: 100%;
     height: 30em;
     background: #1B492F;
+    padding: 60px 180px;
 }
 
+.graduacao-caixa1{
+    position: relative;
+    display: flex;
+    margin-bottom: 4em;
+}
+.graduacao h2{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.graduacao-texto1{
+    align-self: center;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.graduacao-caixa2{
+    position: relative;
+    display: flex;
+    margin-bottom: 4em;
+}
+.graduacao-texto2{
+    align-self: center;
+    text-align: left;
+    padding-right: 50px;
+}
+.graduacao-texto3{
+    position: relative;
+    align-self: center;
+    text-align: left;
+    top: 30px;
+}
+
+#graduacao-img1{
+    background: url('../files/images/audiovisual_4.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 1500px;
+    height: 300px;
+    border-radius: 20px;
+    padding-left: 10px;
+    right: 0px;
+}
+#graduacao-img2{
+    background: url('../files/images/bacharel.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    padding-right: 0px;
+    right: 0px;
+}
+#graduacao-img3{
+    background: url('../files/images/licenciado2.png');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    height: 300px;
+    border-radius: 20px;
+    right: 0px;
+}
+
+
+/* CERTIFICAÇÕES - PÓSGRADUAÇÃO*/
+.posgraduacao{
+    position: relative;
+    height: 62em;
+    width: 100%;
+    background: #743637;
+}
+.posgraduacao-header{
+    position: relative;
+    width: 100%;
+    height: 27em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+}
+.graduacao-title{
+    text-align: center;
+    z-index: 1;
+}
+.graduacao-title h3{
+    font-size: 5em;
+    text-shadow: 
+    0em 0em 0.2em black;
+}
+#graduacao-titleimg2{
+    top: 0;
+    position: absolute;
+    background: url("../files/images/pos2.png");
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    width: 100%;
+    height: 27em;
+    z-index: 0;
+    opacity: 80%;
+}
+
+
+
+/*  FACULDADES  */
+.faculdades{
+    position: relative;
+    height: 43em;
+    width: 100%;
+    padding: 70px 100px;
+    margin: 0;
+    background: #2E3341;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (max-width: 1920px){
 }
