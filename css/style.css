@@ -135,7 +135,7 @@ nav p:hover{
     transform: translateX(-100%);
     animation: scrollprogress 1s linear both;
     animation-timeline: scrollprogress;
-    z-index: 1;
+    z-index: 3;
 }
 
 @scroll-timeline scrollprogress{
@@ -268,6 +268,7 @@ section{
     background: #2E3341;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .mercado h1{
     font-size: 50px;
@@ -280,12 +281,22 @@ section{
     padding: 5px 0px;
     display: flex;
 }
+.main-card::before, .main-card::after{
+    background: linear-gradient(to left, #2E3341 0%, #ffffff00 70%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 20%;
+    z-index: 1;
+    right: 0;
+}
 .slide{
     width: 20%;
     overflow: hidden;
     padding: 0px 0;
     display: flex;
     transition: .7s;
+    
 }
 .card{
     overflow: hidden;
@@ -478,7 +489,7 @@ input{
     z-index: -1;
 }
 
-.background {
+.entrevista-background {
     position: absolute;
     width: 100vw;
     height: 47em;;
@@ -490,88 +501,109 @@ input{
     overflow: hidden;
     z-index: -3;
 }
-.background li {
+.entrevista-background li {
     position: absolute;
     display: block;
     list-style: none;
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    animation: animate 15s linear infinite;
+    animation: entrevista-animation 10s linear infinite;
 }
 
-.background li:nth-child(0) {
+.entrevista-background li:nth-child(0) {
     left: 15%;
     width: 126px;
     height: 126px;
     bottom: -126px;
+    animation-delay: 2s;
+}
+.entrevista-background li:nth-child(1) {
+    left: 9%;
+    width: 161px;
+    height: 161px;
+    bottom: -161px;
     animation-delay: 1s;
 }
-.background li:nth-child(1) {
+.entrevista-background li:nth-child(2) {
+    left: 19%;
+    width: 175px;
+    height: 175px;
+    bottom: -175px;
+    animation-delay: 5s;
+}
+.entrevista-background li:nth-child(3) {
+    left: 32%;
+    width: 167px;
+    height: 167px;
+    bottom: -167px;
+    animation-delay: 13s;
+}
+.entrevista-background li:nth-child(4) {
+    left: 53%;
+    width: 107px;
+    height: 107px;
+    bottom: -107px;
+    animation-delay: 10s;
+}
+.entrevista-background li:nth-child(5) {
     left: 9%;
+    width: 133px;
+    height: 133px;
+    bottom: -133px;
+    animation-delay: 13s;
+}
+.entrevista-background li:nth-child(6) {
+    left: 61%;
     width: 161px;
     height: 161px;
     bottom: -161px;
     animation-delay: 5s;
 }
-.background li:nth-child(2) {
-    left: 19%;
-    width: 175px;
-    height: 175px;
-    bottom: -175px;
-    animation-delay: 10s;
-}
-.background li:nth-child(3) {
-    left: 32%;
-    width: 167px;
-    height: 167px;
-    bottom: -167px;
-    animation-delay: 8s;
-}
-.background li:nth-child(4) {
-    left: 53%;
-    width: 107px;
-    height: 107px;
-    bottom: -107px;
-    animation-delay: 17s;
-}
-.background li:nth-child(5) {
-    left: 9%;
-    width: 133px;
-    height: 133px;
-    bottom: -133px;
-    animation-delay: 20s;
-}
-.background li:nth-child(6) {
-    left: 61%;
-    width: 161px;
-    height: 161px;
-    bottom: -161px;
-    animation-delay: 10s;
-}
-.background li:nth-child(7) {
+.entrevista-background li:nth-child(7) {
     left: 52%;
     width: 153px;
     height: 153px;
     bottom: -153px;
-    animation-delay: 17s;
+    animation-delay: 15s;
 }
-.background li:nth-child(8) {
+.entrevista-background li:nth-child(8) {
     left: 30%;
     width: 149px;
     height: 149px;
     bottom: -149px;
-    animation-delay: 6s;
+    animation-delay: 8s;
 }
-.background li:nth-child(9) {
+.entrevista-background li:nth-child(9) {
     left: 52%;
     width: 165px;
     height: 165px;
     bottom: -165px;
-    animation-delay: 11s;
+    animation-delay: 0s;
+}
+.entrevista-background li:nth-child(10) {
+    right: 10%;
+    width: 165px;
+    height: 165px;
+    bottom: -165px;
+    animation-delay: 10s;
+}
+.entrevista-background li:nth-child(11) {
+    right: 12%;
+    width: 165px;
+    height: 165px;
+    bottom: -165px;
+    animation-delay: 4s;
+}
+.entrevista-background li:nth-child(12) {
+    right: -10%;
+    width: 165px;
+    height: 165px;
+    bottom: -165px;
+    animation-delay: 1s;
 }
 
-@keyframes animate {
+@keyframes entrevista-animation {
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
@@ -588,7 +620,6 @@ input{
 /* CERTIFICAÇÕES */
 .certificacoes{
     position: relative;
-    height: 170em;
     width: 100%;
     margin: 0;
     align-items: center;
@@ -668,11 +699,11 @@ input{
 .graduacao-caixa1{
     position: relative;
     display: flex;
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 }
 .graduacao h2{
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 .graduacao-texto1{
     align-self: center;
@@ -683,7 +714,7 @@ input{
 .graduacao-caixa2{
     position: relative;
     display: flex;
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 }
 .graduacao-texto2{
     align-self: center;
@@ -694,7 +725,6 @@ input{
     position: relative;
     align-self: center;
     text-align: left;
-    top: 30px;
 }
 
 #graduacao-img1{
@@ -729,14 +759,23 @@ input{
     border-radius: 20px;
     right: 0px;
 }
+.linha{
+    left: 0;
+    width: 90%;
+    height: 2px;
+    background: white;
+    margin-bottom: 8px;
+    opacity: 75%;
+}
 
 
 /* CERTIFICAÇÕES - PÓSGRADUAÇÃO*/
 .posgraduacao{
     position: relative;
-    height: 62em;
+    height: 55.5em;
     width: 100%;
     background: #743637;
+    overflow: hidden;
 }
 .posgraduacao-header{
     position: relative;
@@ -748,16 +787,16 @@ input{
     background: black;
     overflow: hidden;
 }
-.graduacao-title{
+.posgraduacao-title{
     text-align: center;
     z-index: 1;
 }
-.graduacao-title h3{
+.posgraduacao-title h3{
     font-size: 5em;
     text-shadow: 
     0em 0em 0.2em black;
 }
-#graduacao-titleimg2{
+#posgraduacao-titleimg2{
     top: 0;
     position: absolute;
     background: url("../files/images/pos2.png");
@@ -769,21 +808,121 @@ input{
     z-index: 0;
     opacity: 80%;
 }
-
-
-
-/*  FACULDADES  */
-.faculdades{
+.posgraduacao-secao{
     position: relative;
-    height: 43em;
     width: 100%;
-    padding: 70px 100px;
+    padding: 60px 180px;
+}
+
+.posgraduacao h2{
+    font-size: 2.7em;
+    margin-bottom: 20px;
+}
+
+
+/*  UNIVERSIDADES  */
+.universidades{
+    position: relative;
+    height: 39em;
+    width: 100%;
+    padding: 80px 100px;
     margin: 0;
-    background: #2E3341;
+    background: #202124;
     align-items: center;
     justify-content: center;
 }
+.universidades-texto{
+    margin-bottom: 140px;
+}
+.universidades-logos{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.universidades-logos ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.universidades-logos ul li{
+    position: relative;
+    list-style: none;
+    width: 120px;
+    height: 120px;
+    margin: 0 70px;
+    transform: rotate(-30deg) skew(25deg);
+    background: #202124;
+}
+.universidades-logos ul li span{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+}
+.universidades-logos img{
+    position: relative;
+    top: 0;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100px !important;
+}
+.universidades-logos ul li:hover span:nth-child(5){
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+.universidades-logos ul li:hover span:nth-child(4){
+    transform: translate(30px,-30px);
+    opacity: .8;
+}
+.universidades-logos ul li:hover span:nth-child(3){
+    transform: translate(20px,-20px);
+    opacity: .6;
+}
+.universidades-logos ul li:hover span:nth-child(2){
+    transform: translate(10px,-10px);
+    opacity: .4;
+}
+.universidades-logos ul li:hover span:nth-child(1){
+    transform: translate(0px,-0px);
+    opacity: .2;
+}
+.universidades-logos ul li:nth-child(1) span{
+    background: linear-gradient(to bottom,#f37923, #f04f25);
+}
+.universidades-logos ul li:nth-child(2) span{
+    background: #111e3e;
+}
+.universidades-logos ul li:nth-child(3) span{
+    background: #da6d14;
+}
+.universidades-logos ul li:nth-child(4) span{
+    background: #2f3b89;
+}
+.universidades-logos ul li:nth-child(5) span{
+    background: #0526a9;
+}
 
+
+/*  FOOTER  */
+.footer{
+    background-color: #000000;
+    width: 100%;
+    height: 10em;  
+}
 @media (max-width: 1920px){
 }
 
