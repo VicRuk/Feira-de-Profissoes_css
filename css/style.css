@@ -48,11 +48,12 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: black;
 }
 .video-bg{
     position: absolute;
     width: 100%;
-    opacity: 25%;
+    opacity: 30%;
 }
 .title{
     text-align: center;
@@ -97,13 +98,13 @@ nav a{
     color:#fff;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 62px;
     letter-spacing: 0.5px;
     transition: 0.5s;
 }
 nav p{
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.5s;
 }
 nav a::after{
@@ -120,10 +121,10 @@ nav a:hover::after{
     margin-top: -5px;
 }
 nav a:hover{
-    font-size: 20px;
+    font-size: 18px;
 }
 nav p:hover{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* BARRA DE PROGRESSO ATIVA CASO HABILITADO 'chrome://flags/#enable-experimental-web-platform-features'
@@ -618,7 +619,7 @@ input{
 
 
 /* CERTIFICAÇÕES */
-.certificacoes{
+.cursos{
     position: relative;
     width: 100%;
     margin: 0;
@@ -626,7 +627,7 @@ input{
     justify-content: center;
     background: #2E3341;
 }
-.certificacoes h1{
+.cursos h1{
     padding-top: 65px;
     padding-bottom: 30px;
     padding-left: 100px;
@@ -654,7 +655,7 @@ input{
 /* CERTIFICAÇÕES - GRADUAÇÃO */
 .graduacao{
     position: relative;
-    height: 103em;
+    height: 80em;
     width: 100%;
     background: #1B492F;
 }
@@ -747,16 +748,6 @@ input{
     height: 300px;
     border-radius: 20px;
     padding-right: 0px;
-    right: 0px;
-}
-#graduacao-img3{
-    background: url('../files/images/licenciado2.png');
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    width: 800px;
-    height: 300px;
-    border-radius: 20px;
     right: 0px;
 }
 .linha{
