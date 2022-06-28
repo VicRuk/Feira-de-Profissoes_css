@@ -493,7 +493,7 @@ input{
 .entrevista-background {
     position: absolute;
     width: 100vw;
-    height: 47em;;
+    height: 47em;
     top: 0;
     left: 0;
     margin: 0;
@@ -763,7 +763,7 @@ input{
 /* CERTIFICAÇÕES - PÓSGRADUAÇÃO*/
 .posgraduacao{
     position: relative;
-    height: 80em;
+    height: 182em;
     width: 100%;
     background: #743637;
     overflow: hidden;
@@ -802,14 +802,16 @@ input{
 .posgraduacao-secao{
     position: relative;
     width: 100%;
-    padding: 60px 180px;
+    padding: 60px 160px;
 }
 
 .posgraduacao h2{
     font-size: 2.7em;
     margin-bottom: 20px;
 }
-
+.posgraduacao b{
+    font-size: 1.2em;
+}
 .especializacao-cursos{
     position: relative;
     width: 100%;
@@ -817,24 +819,25 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 35px 0;
     flex-wrap: wrap;
 }
+.especializacao-cursos ul{
+    width: 100%;
+    margin: 50px;
+}
 .especializacao-cursos img{
-    width: 150px;
+    width: 130px;
     margin: 0 30px;
     display: inline-block;
     transition: 0.5s;
     border-radius: 20px;
 }
 .especializacao-cursos img:hover{
-    width: 157px;
+    width: 137px;
 }
 .especializacao-cursos li{
     list-style: none;
-}
-.especializacao-cursos a:hover{
-    
 }
 
 /*  UNIVERSIDADES  */
