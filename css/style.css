@@ -1409,7 +1409,7 @@ footer .wave#wave4{
         width: 180px;
     }
     #graduacao-img1{
-        background-position-x: -170px;
+        background-position-x: right;
         bottom: -30px;
     }
     .graduacao-caixa1{
@@ -1610,7 +1610,7 @@ footer .wave#wave4{
         width: 110px;
     }
     #graduacao-img1{
-        background-position-x: -270px;
+        background-position-x: right;
     }
     .graduacao-caixa1{
         margin-bottom: 3.2em;
