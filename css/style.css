@@ -455,6 +455,9 @@ input{
 #slide3:checked ~ .s1{
     margin-left: -40%;
 }
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
 
 
 /* ENTREVISTA */
@@ -839,6 +842,15 @@ input{
 .especializacao-cursos li{
     list-style: none;
 }
+.especializacao-cursos p{
+    font-size: 0.7em;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+.especializacao-cursos a{
+    text-decoration: none;
+}
 
 /*  UNIVERSIDADES  */
 .universidades{
@@ -1151,6 +1163,65 @@ footer .wave#wave4{
     .mercado-salario{
         margin-top: 5px;
     }
+
+
+    .graduacao{
+        height: 80em;
+    }
+    .graduacao-secao{
+        height: 30em;
+        padding: 60px 60px;
+    }
+    .graduacao-texto1{
+        padding-right: 30px;
+    }
+    
+    .graduacao-texto2{
+        padding-right: 30px;
+    }
+    .graduacao p{
+        font-size: 1em;
+    }
+    #graduacao-img2{
+        width: 360px;
+    }
+    .posgraduacao{
+        height: 207em;
+    }
+    .posgraduacao-secao{
+        padding: 60px 120px;
+    }
+    
+    .posgraduacao h2{
+        font-size: 2.7em;
+        margin-bottom: 20px;
+    }
+    .posgraduacao b{
+        font-size: 1.2em;
+    }
+    .especializacao-cursos img{
+        width: 95px;
+        margin: 0 10px;
+    }
+    .especializacao-cursos img:hover{
+        width: 100px;
+    }
+    .especializacao-cursos p{
+        font-size: 0.6em;
+    }
+
+    
+    .universidades-texto{
+        margin-bottom: 140px;
+    }
+    .universidades-logos ul li{
+        width: 80px;
+        height: 80px;
+        margin: 0 35px;
+    }
+    .universidades-logos img{
+        width: 70px !important;
+    }
 }
 @media (max-width: 856px) {
     .title h3{
@@ -1181,6 +1252,8 @@ footer .wave#wave4{
     nav p:hover{
         font-size: 11px;
     }
+
+
     .sobre-img1{
         width: 200px;
         height: 150px;
@@ -1218,6 +1291,7 @@ footer .wave#wave4{
         top: 10px
     }
 
+
     .exigencias{
         padding: 75px 30px;
         height: 37em;
@@ -1240,6 +1314,7 @@ footer .wave#wave4{
         left: 10px;
     }
 
+    
     .mercado{
         padding: 70px 20px;
     }
@@ -1257,6 +1332,9 @@ footer .wave#wave4{
     }
     .mercado{
         height: 40em;
+    }
+    .mercado h1{
+        font-size: 1.5em;
     }
     .mercado-desc{
         position: relative;
@@ -1288,9 +1366,107 @@ footer .wave#wave4{
         bottom: 4%;
     }
 
-    .curva::before {
-        width: 85%;
-        transform: translate(-50%, -50%);
+
+    .entrevista{
+        height: 20em;
+    }
+    #entrevista-video{
+        top: 4em;
+    }
+    .entrevista iframe{
+        width: 350px;
+        height: 190px;
+    }
+    .curva1::before {
+        transform: translate(-31%, -71%);
+    }
+    .curva2::before {
+        transform: translate(50%, -20%);
+    }
+
+
+    .cursos h1{
+        padding-left: 50px;
+    }
+
+
+    .graduacao h3{
+        font-size: 4em;
+    }
+    .graduacao{
+        height: 79em;
+    }
+    .graduacao-secao{
+        padding: 40px 20px;
+    }
+    .graduacao h2{
+        font-size: 2em;
+    }
+    .graduacao p{
+        font-size: 0.75em;
+    }
+    #graduacao-img2{
+        width: 180px;
+    }
+    #graduacao-img1{
+        background-position-x: -170px;
+        bottom: -30px;
+    }
+    .graduacao-caixa1{
+        margin-bottom: 3.2em;
+    }
+
+
+    .posgraduacao{
+        height: 240em;
+    }
+    .posgraduacao-title h3{
+        font-size: 3.8em;
+    }
+    .posgraduacao-secao{
+        padding: 60px 60px;
+    }
+    
+    .posgraduacao h2{
+        font-size: 2.4em;
+        margin-bottom: 20px;
+    }
+    .posgraduacao p{
+        font-size: 1em;
+    }
+    .posgraduacao b{
+        font-size: 1.1em;
+    }
+
+    .especializacao-cursos img{
+        width: 81px;
+        margin: 0px 10px;
+    }
+    .especializacao-cursos img:hover{
+        width: 86px;
+    }
+    .especializacao-cursos p{
+        font-size: 0.5em;
+    }
+
+    .universidades{
+        height: 35em;
+    }
+    .universidades-texto{
+        margin-bottom: 90px;
+    }
+    .universidades-logos ul li{
+        width: 45px;
+        height: 45px;
+        margin: 0 20px;
+    }
+    .universidades-logos img{
+        width: 40px !important;
+    }
+
+
+    .footer{
+        height: 20em;
     }
 }
 @media (max-width: 444px) {
@@ -1391,8 +1567,134 @@ footer .wave#wave4{
         font-size: 25px;
     }
 
-    .curva::before {
-        width: 85%;
-        transform: translate(-80%, -50%);
+
+    .entrevista{
+        height: 17em;
+    }
+    #entrevista-video{
+        top: 3.5em;
+    }
+    .entrevista iframe{
+        width: 250px;
+        height: 160px;
+    }
+    .curva1::before {
+        transform: translate(-31%, -76%);
+    }
+    .curva2::before {
+        transform: translate(50%, -22%);
+    }
+
+
+    .cursos h1{
+        padding-left: 30px;
+    }
+
+
+    .graduacao h3{
+        font-size: 2em;
+    }
+    .graduacao{
+        height: 79em;
+    }
+    .graduacao-secao{
+        padding: 40px 10px;
+    }
+    .graduacao h2{
+        font-size: 1.5em;
+    }
+    .graduacao p{
+        font-size: 0.6em;
+    }
+    #graduacao-img2{
+        width: 110px;
+    }
+    #graduacao-img1{
+        background-position-x: -270px;
+    }
+    .graduacao-caixa1{
+        margin-bottom: 3.2em;
+    }
+
+    .posgraduacao{
+        height: 210em;
+    }
+    .posgraduacao-title h3{
+        font-size: 1.7em;
+    }
+    .posgraduacao-secao{
+        padding: 60px 20px;
+    }
+    
+    .posgraduacao h2{
+        font-size: 1.7em;
+    }
+    .posgraduacao p{
+        font-size: 0.7em;
+    }
+
+    .especializacao-cursos img{
+        width: 60px;
+        margin: 0px 5px;
+    }
+    .especializacao-cursos img:hover{
+        width: 65px;
+    }
+    .especializacao-cursos p{
+        font-size: 0.4em;
+    }
+
+
+    .universidades{
+        height: 40em;
+        padding: 80px 20px;
+    }
+    .universidades h1{
+        font-size: 2em;
+    }
+    .universidades-texto{
+        margin-bottom: 45px;
+    }
+    .universidades-logos ul li{
+        width: 45px;
+        height: 45px;
+        margin: 10px 20px;
+    }
+    .universidades ul{
+        flex-direction: column;
+    }
+    .universidades-logos img{
+        width: 40px !important;
+    }
+    .universidades p{
+        font-size: 1em;
+    }
+
+
+    .footer{
+        height: 22em;
+    }
+    .footer-redes img{
+        width: 30px !important;
+        margin: 0 5px;
+    }
+    .footer-menu a{
+        font-size: 1em;
+        color: #fff;
+        margin: 0 10px;
+        display:inline-block;
+        transition: 0.5s;
+        text-decoration: none;
+        opacity: 0.75;
+    }
+    .footer-menu a:hover{
+        opacity: 1;
+    }
+    footer p{
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
     }
 }
