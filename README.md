@@ -1,2 +1,2 @@
 # Feira de Profissoes - Produção Audiovisual
-Projeto "Feira de Profissões - Produção Audiovisual" sob orientação do professor Frederico Barbosa.
+Projeto "Feira de Profissões - Produção Audiovisual" apenas com CSS sob orientação do professor Frederico Barbosa.
